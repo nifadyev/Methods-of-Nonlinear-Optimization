@@ -4,6 +4,7 @@
 Отрезком [x, y] в  ![](https://latex.codecogs.com/svg.latex?R^{n}) называется  геометрическое место точек  {![](https://latex.codecogs.com/svg.latex?{x^{\alpha&space;}:x^{\alpha&space;}=\alpha&space;*x&plus;(1-\alpha&space;)*y,&space;\alpha&space;\in&space;[0,1]})}
 Элемент отрезка может быть записан как: ![](https://latex.codecogs.com/svg.latex?x^{\alpha}=y&plus;\alpha(x-y))
 ![](https://latex.codecogs.com/svg.latex?x^{\alpha}=\alpha&space;x+y-\alpha&space;y)
+
 **Выпуклое множество** в _аффинном_ или _векторном_ пространстве — множество, в котором все точки отрезка, образуемого любыми двумя точками данного множества, также принадлежат данному множеству.
 
 Непустое множество ![](https://latex.codecogs.com/svg.latex?D\subseteq&space;R^{n}) называется **выпуклым множеством**, если
@@ -21,14 +22,17 @@
 ![](https://github.com/nifadyev/Methods-of-Nonlinear-Optimization/blob/master/images/ticket03-1.png?raw=true)
 
 
+
 Пусть ![](https://latex.codecogs.com/svg.latex?G_{i}) выпуклое множество, ![](https://latex.codecogs.com/svg.latex?i=\overline{1,n})
 Доказать, что ![](https://latex.codecogs.com/svg.latex?\bigcap_{i=1}^{n}G_{i}) выпукло
+
 
 ![](https://latex.codecogs.com/svg.latex?G_{1},G_{2}) - выпуклые;   ![](https://latex.codecogs.com/svg.latex?G_{1}\cap&space;G_{2}) - выпуклое?
 
 Пусть x и y принадлежат этому пересечению ![](https://latex.codecogs.com/svg.latex?\widetilde{(G)})
 Доказать, что    ![](https://latex.codecogs.com/svg.latex?\alpha&space;x&plus;(1-\alpha)*y\in\widetilde{G})
 **Доказательство:**
+
 ![](https://latex.codecogs.com/svg.latex?x\in\widetilde{G},x\in&space;G_{1},x\in&space;G_{2}) - выпуклое
 ![](https://latex.codecogs.com/svg.latex?y\in\widetilde{G},y\in&space;G_{1},y\in&space;G_{2}) - выпуклое
 ![](https://latex.codecogs.com/svg.latex?z^{\alpha}=\alpha&space;x&plus;(1-\alpha)*y\in&space;G_{1}) (т.к. G1 - выпуклое)
