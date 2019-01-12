@@ -17,10 +17,7 @@
 выпуклости.
 
 **Примеры**
-<<<<<<< HEAD
 
-![](https://github.com/nifadyev/Methods-of-Nonlinear-Optimization/blob/master/images/ticket03-1.png?raw=true)
-=======
 ![](https://github.com/nifadyev/Methods-of-Nonlinear-Optimization/blob/master/images/ticket03-1.png?raw=true)
 
 
