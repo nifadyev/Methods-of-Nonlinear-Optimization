@@ -3,7 +3,7 @@
 ## Матрица Гессе
 **Матрица Гессе** - матрица вторых производных
 
-![](https://latex.codecogs.com/svg.latex?\triangledown^2&space;Q(x)=\begin{pmatrix}&space;\frac{\partial^2&space;Q}{\partial&space;x_{1}^{2}}&&space;\frac{\partial^2&space;Q}{\partial&space;x_{1}&space;\partial&space;x_{2}}&\\&space;&\\&space;\frac{\partial^2&space;Q}{\partial&space;x_{2}&space;\partial&space;x_{1}}&&space;\frac{\partial^2&space;Q}{\partial&space;x_{2}^{2}}\\&space;\end{pmatrix})
+![](https://latex.codecogs.com/svg.latex?%5Ctriangledown%5E2%20Q%28x%29%3D%20%5Cbegin%7Bpmatrix%7D%20%5Cfrac%7B%5Cpartial%5E2%20Q%7D%7B%5Cpartial%20x_%7B1%7D%5E%7B2%7D%7D%26%20%5Cfrac%7B%5Cpartial%5E2%20Q%7D%7B%5Cpartial%20x_%7B1%7D%20%5Cpartial%20x_%7B2%7D%7D%26%5C%5C%20%5Cfrac%7B%5Cpartial%5E2%20Q%7D%7B%5Cpartial%20x_%7B2%7D%20%5Cpartial%20x_%7B1%7D%7D%26%20%5Cfrac%7B%5Cpartial%5E2%20Q%7D%7B%5Cpartial%20x_%7B2%7D%5E%7B2%7D%7D%20%5Cend%7Bpmatrix%7D)
 
 Пусть А - симметричная матрица
 -   А **неотрицательно определена** (![](https://latex.codecogs.com/svg.latex?A\geqslant&space;0)), если ![](https://latex.codecogs.com/svg.latex?\forall&space;d&space;:&space;d^{T}Ad\geqslant&space;0)
@@ -19,3 +19,4 @@
 Матрица **отрицательно определена**, если знаки главных миноров чередуются, то есть ![](https://latex.codecogs.com/svg.latex?\Delta_{1}<0,\Delta_{2}>0,\Delta_{3}<0,\Delta_{4}>0,\dots)
 
 Если хотя бы 1 главный минор обращается в 0, то критерий Сильвестра **неприменим**.
+
