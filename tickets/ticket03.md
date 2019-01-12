@@ -35,8 +35,11 @@
 **Доказательство:**
 
 ![](https://latex.codecogs.com/svg.latex?x\in\widetilde{G},x\in&space;G_{1},x\in&space;G_{2}) - выпуклое
+
 ![](https://latex.codecogs.com/svg.latex?y\in\widetilde{G},y\in&space;G_{1},y\in&space;G_{2}) - выпуклое
+
 ![](https://latex.codecogs.com/svg.latex?z^{\alpha}=\alpha&space;x&plus;(1-\alpha)*y\in&space;G_{1}) (т.к. G1 - выпуклое)
+
 ![](https://latex.codecogs.com/svg.latex?z^{\alpha}=\alpha&space;x&plus;(1-\alpha)*y\in&space;G_{2}) (т.к. G2 - выпуклое)
 
 ![](https://latex.codecogs.com/svg.latex?%5Cleft.%5Cbegin%7Bmatrix%7Dz%5E%7B%5Calpha%7D%5Cin%20G_%7B1%7D%20%5C%5C%20z%5E%7B%5Calpha%7D%5Cin%20G_%7B2%7D%20%5C%5C%20%5Cwidetilde%7BG%7D%3DG_%7B1%7D%5Ccap%20G_%7B2%7D%20%5Cend%7Bmatrix%7D%5Cright%5C%7D%5CRightarrow%20z%5E%7B%5Calpha%7D%5Cin%20%5Cwidetilde%7BG%7D%5CRightarrow%20%5Cwidetilde%7BG%7D)  выпуклое
