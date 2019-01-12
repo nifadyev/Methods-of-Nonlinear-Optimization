@@ -31,6 +31,7 @@
 
 Пусть x и y принадлежат этому пересечению ![](https://latex.codecogs.com/svg.latex?\widetilde{(G)})
 Доказать, что    ![](https://latex.codecogs.com/svg.latex?\alpha&space;x&plus;(1-\alpha)*y\in\widetilde{G})
+
 **Доказательство:**
 
 ![](https://latex.codecogs.com/svg.latex?x\in\widetilde{G},x\in&space;G_{1},x\in&space;G_{2}) - выпуклое
