@@ -15,4 +15,5 @@
 Операция пересечения, примененная к совокупности (конечной или бесконечной) выпуклых множеств не нарушает выпуклости, а операция объединения может ее нарушить.
 
 **Примеры**
+
 ![](https://github.com/nifadyev/Methods-of-Nonlinear-Optimization/blob/master/images/ticket03-1.png?raw=true)
