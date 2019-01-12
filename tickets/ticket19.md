@@ -4,9 +4,9 @@
 
 Обозначим через ![](https://latex.codecogs.com/svg.latex?\lambda_{k}) доли, составленные длинами соответствующих частей текущего интервала по отношению к его собственной длине. Из рис. 4.2 вытекает следующая их взаимосвязь:
 
-![]()
+![](https://github.com/nifadyev/Methods-of-Nonlinear-Optimization/blob/master/images/ticket19-1.png?raw=true)
 
 Метод золотого сечения использует постоянную пропорцию деления
 ![](https://latex.codecogs.com/svg.latex?\lambda_{k}=\tau=(\sqrt{5}-1)/2), полученную как стационарное решение уравнения (4.3).
 
-![]()
+![](https://github.com/nifadyev/Methods-of-Nonlinear-Optimization/blob/master/images/ticket19-2.png?raw=true)
