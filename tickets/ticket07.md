@@ -13,7 +13,8 @@
 Положительная определенность матрицы связана с положительностью ее главных миноров
 
 Матрица положительно определена, если ![](https://latex.codecogs.com/svg.latex?\Delta_{1}>0,\Delta_{2}>0,...,\Delta_{n}>0)
-![]()
+
+![](https://github.com/nifadyev/Methods-of-Nonlinear-Optimization/blob/master/images/ticket07-1.png?raw=true)
 
 Матрица отрицательно определена, если знаки главных миноров чередуются.
 ![](https://latex.codecogs.com/svg.latex?\Delta_{1}<0,\Delta_{2}>0,\Delta_{3}<0,\Delta_{4}>0)
