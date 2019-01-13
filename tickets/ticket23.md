@@ -2,9 +2,13 @@
 ## 1.Методы градиентного поиска.
 Рассмотрим задачу ![](https://latex.codecogs.com/svg.latex?min\left\{Q(x):x\in&space;R^{n}\right\}). Большинство методов
 локальной оптимизации имеют вид итерационных процедур
+
 ![](https://latex.codecogs.com/svg.latex?x^{k&plus;1}=x^{k}&plus;t_{k}d^{k}), _k=0, 1, 2_ **(4.4)**
+
 ![](https://latex.codecogs.com/svg.latex?k^{k&plus;1},x^{k}) - точки с номерами k, k+1
+
 ![](https://latex.codecogs.com/svg.latex?d^{k}) - направление шага, вектор
+
 ![](https://latex.codecogs.com/svg.latex?t^{k}) - велечина шага, шаговый множитель
 
 
@@ -19,6 +23,6 @@
 ![](https://latex.codecogs.com/svg.latex?%5Cleft%7C%5CDelta%20x%5E%7Bk&plus;1%7D%5Cright%7C%5Cleq%20q%5Cleft%7C%5CDelta%20x%5E%7Bk%7D%5Cright%7C)
 
 ## Из методички
-![]()
+![](https://github.com/nifadyev/Methods-of-Nonlinear-Optimization/blob/master/images/ticket23-1.png?raw=true)
 
-![]()
+![](https://github.com/nifadyev/Methods-of-Nonlinear-Optimization/blob/master/images/ticket23-2.png?raw=true)
