@@ -1,23 +1,24 @@
 # 17. Условия К.-К.-Т для невыпуклой задачи - разобрать на примере.
 
 ## Условия Каруша-Куна-Таккера
-Если функции ![](https://latex.codecogs.com/svg.latex?g_{1}(x),g_{2}(x),\dots,g_{N}(x)) выпуклы (вниз), ограничения – равенства либо
-отсутствуют, либо аффинны, функция Q(x) выпукла (вниз), то такая **задача**
+
+Если функции ![](<https://latex.codecogs.com/svg.latex?g_{1}(x),g_{2}(x),\dots,g_{N}(x)>) выпуклы (вниз), ограничения – равенства либо отсутствуют, либо аффинны, функция Q(x) выпукла (вниз), то такая **задача**
 называется **выпуклой**. В противном случае **задача невыпукла**.
 
 Для задач, **не обладающих выпуклостью**, необходимые условия наличия в ![](https://latex.codecogs.com/svg.latex?x^{*}) локального минимума дает следующая **теорема Каруша-Куна-Таккера**.
 
 Для того, чтобы точка ![](https://latex.codecogs.com/svg.latex?x^{*}) была локальным минимумом рассматриваемой задачи, необходимо выполнение группы условий:
-- ![](https://latex.codecogs.com/svg.latex?x^{*}\in&space;D) - допустимость
-- ![](https://latex.codecogs.com/svg.latex?\exists(\lambda_{0}^{*},\lambda_{1}^{*},\dots\lambda_{N}^{*},\mu_{1}^{*},\mu_{2}^{*},\dots\mu_{M}^{*})\neq0) - нетривиальность
-- ![](https://latex.codecogs.com/svg.latex?\lambda_{0}^{*}\geqslant0,\lambda_{1}^{*}\geqslant0,\dots\lambda_{N}^{*}\geqslant0) - неотрицательность
-- ![](https://latex.codecogs.com/svg.latex?-\lambda_{0}^{*}\bigtriangledown&space;Q(x^{*})=\sum_{i=1}^{N}\lambda_{i}^{*}\bigtriangledown&space;g_{i}(x^{*})&plus;\sum_{j=1}^{M}\mu_{j}^{*}\bigtriangledown&space;h(x^{*})) - разложимость
-- ![](https://latex.codecogs.com/svg.latex?\lambda_{j}^{*}g_{j}(x^{*})=0,&space;j\in\left&space;[1,N&space;\right]) - условие дополняющей нежесткости
+
+-   ![](https://latex.codecogs.com/svg.latex?x^{*}\in&space;D) - допустимость
+-   ![](<https://latex.codecogs.com/svg.latex?\exists(\lambda_{0}^{*},\lambda_{1}^{*},\dots\lambda_{N}^{*},\mu_{1}^{*},\mu_{2}^{*},\dots\mu_{M}^{*})\neq0>) - нетривиальность
+-   ![](https://latex.codecogs.com/svg.latex?\lambda_{0}^{*}\geqslant0,\lambda_{1}^{*}\geqslant0,\dots\lambda_{N}^{*}\geqslant0) - неотрицательность
+-   ![](<https://latex.codecogs.com/svg.latex?-\lambda_{0}^{*}\bigtriangledown&space;Q(x^{*})=\sum_{i=1}^{N}\lambda_{i}^{*}\bigtriangledown&space;g_{i}(x^{*})+\sum_{j=1}^{M}\mu_{j}^{*}\bigtriangledown&space;h(x^{*})>) - разложимость
+-   ![](<https://latex.codecogs.com/svg.latex?\lambda_{j}^{*}g_{j}(x^{*})=0,&space;j\in\left&space;[1,N&space;\right]>) - условие дополняющей нежесткости
 
 ## Пример невыпуклой задачи
 
 Пусть **требуется найти глобальный минимум** в задаче:
-![](https://latex.codecogs.com/svg.latex?min\left&space;\{x_{1}x_{3}:x&space;\in&space;D&space;\},D=\{x&space;\in&space;R^{3}:x_{2}\geqslant&space;1-x_{2},x_{1}-2\leqslant&space;x_{3},x_{2}&plus;x_{3}=2\})
+![](https://latex.codecogs.com/svg.latex?min\left&space;{x_{1}x_{3}:x&space;\in&space;D&space;},D={x&space;\in&space;R^{3}:x_{2}\geqslant&space;1-x_{2},x_{1}-2\leqslant&space;x_{3},x_{2}+x_{3}=2})
 
 Допустимая область D задана линейными ограничениями (равенствами и неравенствами) и является выпуклой. Более того, нетрудно подобрать такую допустимую точку, например, ![](https://latex.codecogs.com/svg.latex?x_{1}=1,x_{2}=1,x_{3}=1), что неравенства выполняются строго, следовательно, для области D выполнено достаточное условие регулярности Слейтера. Поскольку все ограничения в задаче аффинны, можно было для выяснения вопроса о регулярности воспользоваться не самим условием Слейтера, а следствием из него для областей такого вида. Тогда было бы достаточно установить только непустоту множества D . Это значит, что в условиях Каруша-Куна-Таккера всегда можно считать ![](https://latex.codecogs.com/svg.latex?\lambda_{0}=1).
 
@@ -30,15 +31,15 @@
 
 Поскольку задача не является выпуклой, условия Каруша-Куна-Таккера не будут являться достаточными, а будут лишь необходимыми условиями локального минимума. Поскольку условия оптимальности в этой задаче лишь только необходимы, то сначала следует доказать существование минимума в этой задаче. Если решение существует, то далее придется отыскивать все точки, где эти условия выполняются, и затем, сравнивая значение функции в этих точках, определять глобальный минимум.
 
-В рассматриваемой задаче для упрощения решения можно, используя связь ![](https://latex.codecogs.com/svg.latex?x_{2}&plus;x_{3}=2), исключить ![](https://latex.codecogs.com/svg.latex?x_{2}) из ограничений.
+В рассматриваемой задаче для упрощения решения можно, используя связь ![](https://latex.codecogs.com/svg.latex?x_{2}+x_{3}=2), исключить ![](https://latex.codecogs.com/svg.latex?x_{2}) из ограничений.
 Тогда задача примет вид:
-![](https://latex.codecogs.com/svg.latex?min\left\{x_{1}x_{3}:x\in&space;D_{2}\},D_{2}=\{(x_{1},x_{3})\in&space;R^{2}:x_{3}-x_{1}\geqslant&space;1,x_{1}-x_{3}\leqslant&space;2\})
+![](<https://latex.codecogs.com/svg.latex?min\left{x_{1}x_{3}:x\in&space;D_{2}},D_{2}={(x_{1},x_{3})\in&space;R^{2}:x_{3}-x_{1}\geqslant&space;1,x_{1}-x_{3}\leqslant&space;2}>)
 
-Поскольку в пространстве переменных ![](https://latex.codecogs.com/svg.latex?x_{1},x_{3}) матрица вторых производных минимизируемой функции новой задачи 
+Поскольку в пространстве переменных ![](https://latex.codecogs.com/svg.latex?x_{1},x_{3}) матрица вторых производных минимизируемой функции новой задачи
 ![](https://latex.codecogs.com/svg.latex?%5CGamma%20%3D%5Cbegin%7Bpmatrix%7D%200%26%201%5C%5C%201%26%200%20%5Cend%7Bpmatrix%7D)
 имеет собственные числа ![](https://latex.codecogs.com/svg.latex?p_{1,2}=\pm1),то поверхность ![](https://latex.codecogs.com/svg.latex?z=x_{1}x_{3}) является седловой (что, впрочем, непосредственно видно из ее формулы) и функция не имеет конечных безусловных минимумов. При этом либо минимума вообще нет, либо он достигается на границах области. Проанализируем вопрос о существовании минимума.
 
-**Проведем исследование**. Область ![](https://latex.codecogs.com/svg.latex?D_{2}) неограниченна. Изучим поведение функции вдоль прямых ![](https://latex.codecogs.com/svg.latex?x_{1}-x_{3}=c(1\leqslant&space;c&space;\leqslant&space;2)), параллельных границам области. Введем вектор ![](https://latex.codecogs.com/svg.latex?v=(1;1)), направленный вдоль этих прямых. Функция Q (x) имеет по направлению ν положительную вторую производную, поскольку
+**Проведем исследование**. Область ![](https://latex.codecogs.com/svg.latex?D_{2}) неограниченна. Изучим поведение функции вдоль прямых ![](<https://latex.codecogs.com/svg.latex?x_{1}-x_{3}=c(1\leqslant&space;c&space;\leqslant&space;2)>), параллельных границам области. Введем вектор ![](<https://latex.codecogs.com/svg.latex?v=(1;1)>), направленный вдоль этих прямых. Функция Q (x) имеет по направлению ν положительную вторую производную, поскольку
 ![](https://latex.codecogs.com/svg.latex?%5Cfrac%7B%5Cpartial%5E%7B2%7DQ%28x%29%7D%7B%5Cpartial%20%5Cnu%5E%7B2%7D%7D%3D%5Cnu%5E%7BT%7D%20%5Cbigtriangledown_%7Bxx%7D%5E%7B2%7DQ%5Cnu%3D%281%3B1%29%5Cbegin%7Bpmatrix%7D%200%26%201%5C%5C%201%26%200%20%5Cend%7Bpmatrix%7D%5Cbegin%7Bpmatrix%7D%201%5C%5C%201%20%5Cend%7Bpmatrix%7D%3D2%3E0)
 
 Отсюда и из квадратичного вида функции Q (x ) следует **существование конечного минимума в задаче**, поскольку **на бесконечности функция будет возрастать равномерно по параметру c**.
