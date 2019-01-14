@@ -2,33 +2,26 @@
 
 
 ### Сначала разберемся в некоторых в понятиях:
-- Матрица Гессе: 
-Матрицей Гессе функции m переменных ![](https://latex.codecogs.com/svg.latex?y(x_{1},..,x_{n})) называется матрица, составленная из вторых ![](https://latex.codecogs.com/svg.latex?y(x_{1},..,x_{n})) по всем переменным - 
-- Гессиан функции: 
+- **Матрица Гессе**: 
+Матрицей Гессе функции m переменных ![](https://latex.codecogs.com/svg.latex?y(x_{1},..,x_{n})) называется матрица, составленная из вторых ![](https://latex.codecogs.com/svg.latex?y(x_{1},..,x_{n})) по всем переменным
+- **Гессиан функции**: 
 симметрическая квадратичная форма, описывающая поведение функции во втором порядке.
 Для функции f, дважды дифференцируемой в точке ![](https://latex.codecogs.com/svg.latex?x\in&space;R^{n})
 ![](https://latex.codecogs.com/svg.latex?H(x)=\sum_{i=1}^{n}\sum_{j=1}^{n}a_{ij}x_{i}x_{j}),
 описывающую наилучшее квадратичное приближение функции в некоторой окрестности точки x и имеющую матрицу вида:
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/389411defb8c9662a366a1d87c25c197c1c56dc4)
-так называемую матрицу Гессе, определитель которой обычно подразумевается под Гессианом
-Про квадратичную форму можно почитать здесь - https://studfiles.net/preview/6144690/page:5/
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/389411defb8c9662a366a1d87c25c197c1c56dc4) 
+так называемую матрицу Гессе, определитель которой обычно подразумевается под **Гессианом**
+Про квадратичную форму можно почитать [здесь](https://studfiles.net/preview/6144690/page:5/)
 
 - ![](https://latex.codecogs.com/svg.latex?d}) - скорее всего подразумевается вектор 
 - ![](https://latex.codecogs.com/svg.latex?d^{T}) - транспонированный вектор 
-- Непрерывная функция - функция y=f(x) называется непрерывной в точке ![](https://latex.codecogs.com/svg.latex?x_{0}), 
-если ![](https://latex.codecogs.com/svg.latex?\lim_{x\rightarrow&space;x_{0}}f(x)=f(x_{0}))
+- Непрерывная функция - функция y=f(x) называется непрерывной в точке ![](https://latex.codecogs.com/svg.latex?x_{0}), если ![](https://latex.codecogs.com/svg.latex?\lim_{x\rightarrow&space;x_{0}}f(x)=f(x_{0}))
 - Симеетричная матрица ![](https://latex.codecogs.com/svg.latex?A^{T}=A) 
 - дважды непрерывно дифференцируемые функции — функции имеющие непрерывную вторую производную.
 
 ### Теперь попробуем разобраться в билете
-Пусть Q определена на открытом выпуклом множестве D. Q
-выпукла на D тогда и только тогда, когда матрица Гессе (обозначим ее
-![](https://latex.codecogs.com/svg.latex?\triangledown_{2}Q(x)) ) неотрицательно определена на D, т.е. ∀x∈D и произвольного d
-![](https://latex.codecogs.com/svg.latex?d^{T}\triangledown_{2}Q(x)d\geq0). Заметим, что в силу непрерывности вторых частных
-производных матрица Гессе будет симметрической.
+Пусть Q определена на открытом выпуклом множестве D. Q выпукла на D тогда и только тогда, когда матрица Гессе (обозначим ее ![](https://latex.codecogs.com/svg.latex?\triangledown_{2}Q(x))) неотрицательно определена на D, т.е. ∀x∈D и произвольного d ![](https://latex.codecogs.com/svg.latex?d^{T}\triangledown_{2}Q(x)d\geq0). Заметим, что в силу непрерывности вторых частных производных матрица Гессе будет симметрической.
 
-Комментарий: Напомним, что характер знакоопределенности симметрической матрицы
-![](https://latex.codecogs.com/svg.latex?A^{T}=A)  определяется по знаку квадратичной формы ![](https://latex.codecogs.com/svg.latex?d^{T}Ad)  для ![](https://latex.codecogs.com/svg.latex?d\neq&space;0) . Если
-знак может быть различен для разных d , то матрицу A называют
-знаконеопределенной.
-- В интернете существует еще одно определение для частного случая. Для того чтобы функция f, дважды дифференцируемая в интервале (a,b), была выпуклой вниз (вверх) на (a,b), необходимо и достаточно, чтобы ![](https://latex.codecogs.com/svg.latex?f^{''}(x)\geq&space;0) (![](https://latex.codecogs.com/svg.latex?f^{''}(x)\leq&space;0) ) во всех точках ![](https://latex.codecogs.com/svg.latex?x\in&space;(a,b)).
+**Комментарий**: Напомним, что характер знакоопределенности симметрической матрицы ![](https://latex.codecogs.com/svg.latex?A^{T}=A)  определяется по знаку квадратичной формы ![](https://latex.codecogs.com/svg.latex?d^{T}Ad)  для ![](https://latex.codecogs.com/svg.latex?d\neq&space;0) . Если знак может быть различен для разных d , то матрицу A называют знаконеопределенной.
+
+В интернете существует еще одно определение для частного случая. Для того чтобы функция f, дважды дифференцируемая в интервале (a,b), была выпуклой вниз (вверх) на (a,b), необходимо и достаточно, чтобы ![](https://latex.codecogs.com/svg.latex?f^{''}(x)\geq&space;0) (![](https://latex.codecogs.com/svg.latex?f^{''}(x)\leq&space;0) ) во всех точках ![](https://latex.codecogs.com/svg.latex?x\in&space;(a,b)).

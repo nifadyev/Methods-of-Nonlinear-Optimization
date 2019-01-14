@@ -6,24 +6,25 @@
 
 Пояснения к постановке задачи:
 
-![](https://latex.codecogs.com/svg.latex?u_{k}=u(t_{k})) - **управление** в момент времени ![](https://latex.codecogs.com/svg.latex?t_{k})
+-   ![](<https://latex.codecogs.com/svg.latex?u_{k}=u(t_{k})>) - **управление** в момент времени ![](https://latex.codecogs.com/svg.latex?t_{k})
+-   ![](<https://latex.codecogs.com/svg.latex?x_{k}=x(t_{k})>) - **состояние** в момент времени ![](https://latex.codecogs.com/svg.latex?t_{k})
 
-![](https://latex.codecogs.com/svg.latex?x_{k}=x(t_{k})) - **состояние** в момент времени ![](https://latex.codecogs.com/svg.latex?t_{k})
-
-**Динамическая система (ДС)** - объект, для которого можно однозначно определить ![](https://latex.codecogs.com/svg.latex?x(t),&space;\forall&space;\bar{t}&space;>&space;t) при известном управлении ![](https://latex.codecogs.com/svg.latex?u(\tilde{\iota&space;}),&space;\tilde{\iota&space;}&space;\in&space;\left&space;[&space;t,&space;\bar{t}&space;\right&space;]), и зная описание x(t) данного объекта.
+**Динамическая система (ДС)** - объект, для которого можно однозначно определить ![](https://latex.codecogs.com/svg.latex?x(t),&space;\forall&space;\bar{t}&space;>&space;t) при известном управлении ![](<https://latex.codecogs.com/svg.latex?u(\tilde{\iota&space;}),&space;\tilde{\iota&space;}&space;\in&space;\left&space;[&space;t,&space;\bar{t}&space;\right&space;]>), и зная описание x(t) данного объекта.
 
 ДС определяется набором ![](https://latex.codecogs.com/svg.latex?\left&space;\langle&space;X,T,F,U&space;\right&space;\rangle), где:
+
 -   X - множество состояний
     -   ![](https://latex.codecogs.com/svg.latex?X_{0}) - множество начальных состояний
     -   ![](https://latex.codecogs.com/svg.latex?X_{N}) - множество конечных состояний
 -   T - множество допустимых моментов времени
 -   F - множество операторов или оператор, позволяющий по x(t) определить x(![](https://latex.codecogs.com/svg.latex?\bar{t}))
--   U - множество значений управлений, зависящих от момента времени и текущего состояния 
+-   U - множество значений управлений, зависящих от момента времени и текущего состояния
 
-Оператор ДС/определение ДС - ![](https://latex.codecogs.com/svg.latex?x_{k&plus;1}=f_{k&plus;1}(x_{k},U_{k&plus;1}))
+**Оператор ДС/определение ДС** - ![](<https://latex.codecogs.com/svg.latex?x_{k+1}=f_{k+1}(x_{k},U_{k+1})>)
 
-![](https://latex.codecogs.com/svg.latex?d_{k&plus;1}(x_{k},U_{k&plus;1})) - функция доходов/затрат на текущем шаге
+![](<https://latex.codecogs.com/svg.latex?d_{k+1}(x_{k},U_{k+1})>) - функция доходов/затрат на текущем шаге
 
-Требования к ДС:
+**Требования к ДС:**
+
 -   новые состояния и функции затрат/доходов зависят только от предыдущего состояния, управления и момента времени
 -   управление зависит от предыдущего состояния и момента времени
