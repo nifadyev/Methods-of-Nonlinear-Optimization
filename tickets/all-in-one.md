@@ -90,6 +90,7 @@
 Непустое множество ![](https://latex.codecogs.com/svg.latex?D\subseteq&space;R^{n}) называется **выпуклым множеством**, если
 для любых элементов _x_ и _y_ из _D_ соединяющий их отрезок ![](https://latex.codecogs.com/svg.latex?[x,y]\subset&space;D), т.е.
 ![](https://latex.codecogs.com/svg.latex?\forall&space;x,y\in&space;D) и ![](https://latex.codecogs.com/svg.latex?\forall&space;\alpha\in[0,1])
+
 ![](<https://latex.codecogs.com/svg.latex?x^{\alpha}=\alpha*x+(1-\alpha)*y\in&space;D>)
 
 Пустое множество считается выпуклым по определению.
@@ -112,9 +113,13 @@
 **Доказательство:**
 
 ![](https://latex.codecogs.com/svg.latex?x\in\widetilde{G},x\in&space;G_{1},x\in&space;G_{2}) - выпуклое
+
 ![](https://latex.codecogs.com/svg.latex?y\in\widetilde{G},y\in&space;G_{1},y\in&space;G_{2}) - выпуклое
+
 ![](<https://latex.codecogs.com/svg.latex?z^{\alpha}=\alpha&space;x+(1-\alpha)*y\in&space;G_{1}>) (т.к. G1 - выпуклое)
+
 ![](<https://latex.codecogs.com/svg.latex?z^{\alpha}=\alpha&space;x+(1-\alpha)*y\in&space;G_{2}>) (т.к. G2 - выпуклое)
+
 ![](https://latex.codecogs.com/svg.latex?%5Cleft.%5Cbegin%7Bmatrix%7Dz%5E%7B%5Calpha%7D%5Cin%20G_%7B1%7D%20%5C%5C%20z%5E%7B%5Calpha%7D%5Cin%20G_%7B2%7D%20%5C%5C%20%5Cwidetilde%7BG%7D%3DG_%7B1%7D%5Ccap%20G_%7B2%7D%20%5Cend%7Bmatrix%7D%5Cright%5C%7D%5CRightarrow%20z%5E%7B%5Calpha%7D%5Cin%20%5Cwidetilde%7BG%7D%5CRightarrow%20%5Cwidetilde%7BG%7D) выпуклое
 
 
@@ -126,8 +131,10 @@
     -   Пусть на множестве ![](https://latex.codecogs.com/svg.latex?D%5Csubseteq%20R%5E%7Bn%7D) задана функция Q. Множество ![](https://latex.codecogs.com/svg.latex?epiQ%28D%29%5Csubseteq%20R%5E%7Bn+1%7D) называют ее **надграфиком** (**эпиграфом**), если
         ![](https://latex.codecogs.com/svg.latex?epiQ%28D%29%3D%5C%7B%28x%3Bu%29%3Ax%5Cin%20D%2Cu%5Cin%20%5C%5BQ%28x%29%2C%5Cinfty%20%5C%5D%5C%7D)
 -   **Функция** Q , определенная на выпуклом множестве ![](https://latex.codecogs.com/svg.latex?D%5Csubseteq%20R%5E%7Bn%7D), называется **выпуклой** (**выпуклой вниз**) на D , если ![](https://latex.codecogs.com/svg.latex?%5Cforall%20x%2Cy%20%5Cin%20D%2C%5Cforall%20%5Calpha%20%5Cin%20%5C%5B0%2C1%5C%5D)
+  
     ![](https://latex.codecogs.com/svg.latex?Q%28%5Calpha%20x+%281-%5Calpha%29y%29%5Cleqslant%20%5Calpha%20Q%28x%29+%281-%5Calpha%29Q%28y%29)
 -   Если при тех же условиях вместо неравенства вида «≤» выполняется неравенство вида «≥», то **функция** называется **вогнутой (выпуклой вверх)**. Если ![](https://latex.codecogs.com/svg.latex?%5Cforall%20x%2Cy%20%5Cin%20D%2C%5Cforall%20%5Calpha%20%5Cin%20%5C%5B0%2C1%5C%5D)
+    
     ![](https://latex.codecogs.com/svg.latex?Q%28%5Calpha%20x+%281-%5Calpha%29y%29%3C%28%3E%29%20%5Calpha%20Q%28x%29+%281-%5Calpha%29Q%28y%29) функция называется **строго выпуклой (строго вогнутой)**.
 -   Согласно последних определений **выпуклость функции** Q на D
     **геометрически** означает, что для всякого отрезка [x, y], включенного в D, график этого отрезка (![](https://latex.codecogs.com/svg.latex?0%20%5Cleqslant%20%5Calpha%20%5Cleqslant%201)) проходит нестрого ниже соответствующей хорды, опирающейся на значения Q (x) и Q (y) (рис. 2.1).
@@ -281,8 +288,11 @@
 
 **Градиент** - направление наибольшего возрастания функции
 ![](https://latex.codecogs.com/svg.latex?%28%5Cbigtriangledown%20Q%28x%5E%7B0%7D%29%2C%5Cnu%29%5Crightarrow%20min)
+
 ![](https://latex.codecogs.com/svg.latex?cos%5Cvarphi%20%3D-1)
+
 ![](https://latex.codecogs.com/svg.latex?%5Cvarphi%20%3D%5Cpi) - ![](https://latex.codecogs.com/svg.latex?%5Cnu) направлен противоположно градиенту
+
 ![](https://latex.codecogs.com/svg.latex?%5Cnu%20%3D%20-%5Cbigtriangledown%20Q%28x%5E%7B0%7D%29) - **антиградиент**
 
 
@@ -300,7 +310,9 @@
 **Доказательство:**
 
 Пусть ![](https://latex.codecogs.com/svg.latex?\bigtriangledown&space;Q(x^{0})\neq0)
+
 ![](https://latex.codecogs.com/svg.latex?V=\frac{\bigtriangledown&space;Q(x^{0})}{|\bigtriangledown&space;Q(x^{0})|})
+
 ![](https://latex.codecogs.com/svg.latex?Q%28x%5E%7B0%7D&plus;%5Ctilde%7B%5Ciota%7DV%29%3DQ%28x%5E%7B0%7D%29&plus;%5Cfrac%7BdQ%28x%5E%7B0%7D&plus;%5Ctilde%7B%5Ciota%7DV%29%7D%7Bd%5Ctilde%7B%5Ciota%7D%7D%5Ctilde%7B%5Ciota%7D&plus;O%28%5Ctilde%7B%5Ciota%7D%29%3DQ%28x%5E%7B0%7D%29&plus;%28%5Cbigtriangledown%20Q%28x%5E%7B0%7D%29%2CV%29%5Ctilde%7B%5Ciota%7D&plus;O%28%5Ctilde%7B%5Ciota%7D%29%3DQ%28x%5E%7B0%7D%29&plus;%7C%5Cbigtriangledown%20Q%28x%5E%7B0%7D%29%7C%20%5Cfrac%7B%7C%5Cbigtriangledown%20Q%28x%5E%7B0%7D%29%7C%7D%7B%7C%5Cbigtriangledown%20Q%28x%5E%7B0%7D%29%7C%7D%28-1%29%5Ctilde%7B%5Ciota%7D&plus;O%28%5Ctilde%7B%5Ciota%7D%29%3DQ%28x%5E%7B0%7D%29-%5Ctilde%7B%5Ciota%7D%7C%5Cbigtriangledown%20Q%28x%5E%7B0%7D%29%7C&plus;O%28%5Ctilde%7B%5Ciota%7D%29%3CQ%28x%5E%7B0%7D%29)
 
 Получено противоречие, значит предположение неверно.
@@ -527,6 +539,7 @@ e) ![](<https://latex.codecogs.com/svg.latex?\lambda_{i}^{*}g_{i}(x^{*})=0,(i\in
 
 Исследуем границу ![](https://latex.codecogs.com/svg.latex?x_{3}-x_{1}=1).Система условий Куна-Таккера примет вид:
 ![](https://latex.codecogs.com/svg.latex?-x_{3}=-\lambda_{1},&space;x_{3}-x_{1}=1)
+
 ![](https://latex.codecogs.com/svg.latex?-x_{1}=\lambda_{1},&space;\lambda\geqslant&space;0)
 
 Они выполняются при ![](https://latex.codecogs.com/svg.latex?x_{1}=\pm1,x_{3}=-1,&space;\lambda_{1}=1) (точка B на рис. 3.4). Значение функции равно − 1 , т.е. меньше, чем в первой найденной точке. Следовательно, **глобальный минимум** вспомогательной задачи **достигается в точке** ![](https://latex.codecogs.com/svg.latex?x_{1}=1,&space;x_{3}=-1), а для исходной задачи — **в точке** ![](https://latex.codecogs.com/svg.latex?x_{1}=1,&space;x_{2}=3,&space;x_{3}=-1)
@@ -649,6 +662,7 @@ a := x, c := y, ![](https://latex.codecogs.com/svg.latex?Q_{c}:=Q_{y&space;}).
 ![](https://latex.codecogs.com/svg.latex?Q%28x%5E%7Bk+1%7D%29%3DQ%28x_%7Bk%7D+t_%7Bk%7D*d%5E%7Bk%7D%29%3Dmin%3DQ%28x_%7Bk%7D+t_%7Bk%7D*d%5E%7Bk%7D%29) - **метод наискорейшего градиентного поиска**
 
 ![](https://latex.codecogs.com/svg.latex?%5Cleft%20%7C%20%5CDelta%20x%5E%7Bk+1%7D%20%5Cright%20%7C%5Cleq%20q*%5Cleft%20%7C%20%5CDelta%20x%5E%7Bk%7D%20%5Cright%20%7C%5E%7B2%7D)
+
 ![](<https://latex.codecogs.com/svg.latex?t^{k}=argminQ(x^{k}+td^{k}),&space;t\geq&space;0>)
 
 ![](https://latex.codecogs.com/svg.latex?%5Cleft%20%7C%20%5CDelta%20x%5E%7Bk%7D%20%5Cright%20%7C%3D%5Cleft%20%7C%20x%5E%7Bk%7D-x%5E%7B*%7D%20%5Cright%20%7C)
