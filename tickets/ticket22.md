@@ -10,7 +10,7 @@
 
 Условие, определяющее стационарную точку ![](https://latex.codecogs.com/gif.latex?\bar{x}) полинома ![](<https://latex.codecogs.com/gif.latex?P_{k}(x)>), имеет вид: ![](<https://latex.codecogs.com/svg.latex?\bigtriangledown&space;P_{k}(\bar{x})=\bigtriangledown&space;Q_{k}+\bigtriangledown&space;^{2}_{xx}Q_{k}(\bar{x}-x^{k})=0>)
 
-![](https://github.com/nifadyev/Methods-of-Nonlinear-Optimization/blob/master/images/22-1.png?raw=true)
+![](../images/ticket22-1.png)
 
 Если принять точку ![](https://latex.codecogs.com/gif.latex?\bar{x}) за точку очередного испытания ![](https://latex.codecogs.com/gif.latex?x^{k+1}), получим **метод Ньютона**:
 -   ![](https://latex.codecogs.com/gif.latex?x^{k+1}=x^{k}-d^{k}_{newton})
