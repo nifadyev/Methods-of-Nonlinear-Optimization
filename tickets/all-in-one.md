@@ -555,15 +555,15 @@ e) ![](<https://latex.codecogs.com/svg.latex?\lambda_{i}^{*}g_{i}(x^{*})=0,(i\in
 
 ### Алгоритм
 
-0. Задать δ > 0 - точность решения.
-1. Положить ![](<https://latex.codecogs.com/svg.latex?c=(a+b)/2>) и ![](<https://latex.codecogs.com/svg.latex?Q_{c}=Q(c)>).
-2. Пока b − a > δ выполнять шаги 2.1 и 2.2:
-    2.1. Вычислить: ![](<https://latex.codecogs.com/svg.latex?x=(a+c)/2>), ![](<https://latex.codecogs.com/svg.latex?Q_{x}=Q(x)>); ![](<https://latex.codecogs.com/svg.latex?y=(c+b)/2>), ![](<https://latex.codecogs.com/svg.latex?Q_{y}=Q(y)>)
-    2.2. Если ![](https://latex.codecogs.com/svg.latex?Q_{x}<Q_{c}<Q_{y}), положить b := y, c := x, ![](https://latex.codecogs.com/svg.latex?Q_{c}:=Q_{x&space;}); иначе,
-если ![](https://latex.codecogs.com/svg.latex?Q_{x}>Q_{c}\leq&space;Q_{y}), то положить a := x, b := y; иначе положить
-a := x, c := y, ![](https://latex.codecogs.com/svg.latex?Q_{c}:=Q_{y&space;}).
-1. Завершить выполнение метода с интервальной оценкой решения
-![](https://latex.codecogs.com/svg.latex?x^{*}\in&space;[a,b],&space;b&space;-a&space;\leq&space;\delta)
+1. Задать δ > 0 - точность решения.
+2. Положить ![](<https://latex.codecogs.com/svg.latex?c=(a+b)/2>) и ![](<https://latex.codecogs.com/svg.latex?Q_{c}=Q(c)>).
+3. Пока b − a > δ выполнять шаги 3.1 и 3.2:
+   3.1. Вычислить: ![](<https://latex.codecogs.com/svg.latex?x=(a+c)/2>), ![](<https://latex.codecogs.com/svg.latex?Q_{x}=Q(x)>); ![](<https://latex.codecogs.com/svg.latex?y=(c+b)/2>), ![](<https://latex.codecogs.com/svg.latex?Q_{y}=Q(y)>)
+   3.2. Если ![](https://latex.codecogs.com/svg.latex?Q_{x}<Q_{c}<Q_{y}), положить b := y, c := x, ![](https://latex.codecogs.com/svg.latex?Q_{c}:=Q_{x&space;}); иначе,
+   если ![](https://latex.codecogs.com/svg.latex?Q_{x}>Q_{c}\leq&space;Q_{y}), то положить a := x, b := y; иначе положить
+   a := x, c := y, ![](https://latex.codecogs.com/svg.latex?Q_{c}:=Q_{y&space;}).
+4. Завершить выполнение метода с интервальной оценкой решения
+   ![](https://latex.codecogs.com/svg.latex?x^{*}\in&space;[a,b],&space;b&space;-a&space;\leq&space;\delta)
 
 ![](../images/ticket18-1.png)
 
