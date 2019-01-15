@@ -150,36 +150,29 @@
 Неравенство означает, что график (поверхность) функции всюду проходит нестрого выше ее линейного приближения (касательной гиперплоскости), построенного по измерениям функции Q и ее градиента ∇Q в произвольной точке y из D.
 
 
-# 1. Постановка задачи динамического программирования (можно на примере).
+# 5. Критерий Сильвестра, матрица Гессе.
 
-## Общая постановка задачи динамического программирования
+## Матрица Гессе
 
-Найти такое начальное состояние ![](<https://latex.codecogs.com/svg.latex?x_{0}^{*}=x_{0}(t^{s})\in&space;X^{s}>) и такой допустимый набор управлений ![](https://latex.codecogs.com/svg.latex?u_{1}^{*},u_{2}^{*},\dots,u_{N}^{*}), переводящий систему в одно из состояний ![](<https://latex.codecogs.com/svg.latex?x_{N}^{*}=x^{*}(t_{f})\in&space;X^{f}>), чтобы общие затраты, являющиеся аддитивной функцией затрат, были минимальны (или максимальны, если прибыль).
+**Матрица Гессе** - матрица вторых производных
 
-Пояснения к постановке задачи:
+![](https://latex.codecogs.com/svg.latex?%5Ctriangledown%5E2%20Q%28x%29%3D%20%5Cbegin%7Bpmatrix%7D%20%5Cfrac%7B%5Cpartial%5E2%20Q%7D%7B%5Cpartial%20x_%7B1%7D%5E%7B2%7D%7D%26%20%5Cfrac%7B%5Cpartial%5E2%20Q%7D%7B%5Cpartial%20x_%7B1%7D%20%5Cpartial%20x_%7B2%7D%7D%26%5C%5C%20%5Cfrac%7B%5Cpartial%5E2%20Q%7D%7B%5Cpartial%20x_%7B2%7D%20%5Cpartial%20x_%7B1%7D%7D%26%20%5Cfrac%7B%5Cpartial%5E2%20Q%7D%7B%5Cpartial%20x_%7B2%7D%5E%7B2%7D%7D%20%5Cend%7Bpmatrix%7D)
 
--   ![](<https://latex.codecogs.com/svg.latex?u_{k}=u(t_{k})>) - **управление** в момент времени ![](https://latex.codecogs.com/svg.latex?t_{k})
--   ![](<https://latex.codecogs.com/svg.latex?x_{k}=x(t_{k})>) - **состояние** в момент времени ![](https://latex.codecogs.com/svg.latex?t_{k})
+Пусть А - симметричная матрица
 
-**Динамическая система (ДС)** - объект, для которого можно однозначно определить ![](https://latex.codecogs.com/svg.latex?x(t),&space;\forall&space;\bar{t}&space;>&space;t) при известном управлении ![](<https://latex.codecogs.com/svg.latex?u(\tilde{\iota&space;}),&space;\tilde{\iota&space;}&space;\in&space;\left&space;[&space;t,&space;\bar{t}&space;\right&space;]>), и зная описание x(t) данного объекта.
+-   А **неотрицательно определена** (![](https://latex.codecogs.com/svg.latex?A\geqslant&space;0)), если ![](https://latex.codecogs.com/svg.latex?\forall&space;d&space;:&space;d^{T}Ad\geqslant&space;0)
+-   А **положительно определена** (![](https://latex.codecogs.com/svg.latex?A>&space;0)), если ![](https://latex.codecogs.com/svg.latex?\forall&space;d&space;:&space;d^{T}Ad>&space;0)
+-   А **знаконеопределена**, если ![](https://latex.codecogs.com/svg.latex?\exists&space;d':&space;(d')^{T}Ad'>0,&space;d'':(d'')^{T}Ad''<0)
 
-ДС определяется набором ![](https://latex.codecogs.com/svg.latex?\left&space;\langle&space;X,T,F,U&space;\right&space;\rangle), где:
+## Критерий Сильвестра
 
--   X - множество состояний
-    -   ![](https://latex.codecogs.com/svg.latex?X_{0}) - множество начальных состояний
-    -   ![](https://latex.codecogs.com/svg.latex?X_{N}) - множество конечных состояний
--   T - множество допустимых моментов времени
--   F - множество операторов или оператор, позволяющий по x(t) определить x(![](https://latex.codecogs.com/svg.latex?\bar{t}))
--   U - множество значений управлений, зависящих от момента времени и текущего состояния
+**Критерий Сильвестра** связывает положительную определенность матрицы с положительной определенностью ее главных миноров (![](https://latex.codecogs.com/svg.latex?\Delta_{i},&space;i&space;\in\left&space;[&space;1,n&space;\right&space;]), где n - размерность матрицы).
 
-**Оператор ДС/определение ДС** - ![](<https://latex.codecogs.com/svg.latex?x_{k+1}=f_{k+1}(x_{k},U_{k+1})>)
+Матрица **положительна определена**, если ![](https://latex.codecogs.com/svg.latex?\forall\Delta_{i}>0,&space;i&space;\in\left&space;[&space;1,n&space;\right&space;])
 
-![](<https://latex.codecogs.com/svg.latex?d_{k+1}(x_{k},U_{k+1})>) - функция доходов/затрат на текущем шаге
+Матрица **отрицательно определена**, если знаки главных миноров чередуются, то есть ![](https://latex.codecogs.com/svg.latex?\Delta_{1}<0,\Delta_{2}>0,\Delta_{3}<0,\Delta_{4}>0,\dots)
 
-**Требования к ДС:**
-
--   новые состояния и функции затрат/доходов зависят только от предыдущего состояния, управления и момента времени
--   управление зависит от предыдущего состояния и момента времени
+Если хотя бы 1 главный минор обращается в 0, то критерий Сильвестра **неприменим**.
 
 
 # 6.	Критерий выпуклости для дважды непрерывно дифференцируемой функции.
