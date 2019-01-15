@@ -1,9 +1,11 @@
 # 21. Метод касательных.
 ![](https://latex.codecogs.com/svg.latex?f(x),&space;\[a,b\])
 ![](https://latex.codecogs.com/svg.latex?f^{'}(a)f^{'}(b)<0)
+
 ![](https://latex.codecogs.com/svg.latex?y-y_{0}=f'(x_{0})(x-x_{0})) - уравнение  касательной
 
 Точка ![](https://latex.codecogs.com/svg.latex?%28a%2Cf%28a%29%29%3Ay-f%28a%29%3Df%27%28a%29%28x-a%29)
+
 Точка ![](https://latex.codecogs.com/svg.latex?%28b%2Cf%28b%29%29%3Ay-f%28b%29%3Df%27%28b%29%28x-b%29)
 
 ![](https://latex.codecogs.com/svg.latex?f%28a%29&plus;f%27%28a%29%28x-a%29%3Df%28b%29&plus;f%27%28b%29%28x-b%29)
