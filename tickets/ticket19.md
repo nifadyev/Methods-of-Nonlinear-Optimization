@@ -6,6 +6,6 @@
 
 ![](https://github.com/nifadyev/Methods-of-Nonlinear-Optimization/blob/master/images/ticket19-1.png?raw=true)
 
-Метод золотого сечения использует постоянную пропорцию деления ![](https://latex.codecogs.com/svg.latex?\lambda_{k}=\tau=(\sqrt{5}-1)/2), полученную как стационарное решение уравнения (4.3).
+Метод золотого сечения использует постоянную пропорцию деления ![](https://latex.codecogs.com/svg.latex?\lambda_{k}=\tau=(\sqrt{5}-1)/2\approx0,62), полученную как стационарное решение уравнения (4.3).
 
 ![](../images/ticket19-2.png)
